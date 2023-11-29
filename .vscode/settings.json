@@ -1,0 +1,43 @@
+{
+    "editor.inlineSuggest.showToolbar": "onHover",
+    "sqltools.connections": [
+        {
+            "mssqlOptions": {
+                "appName": "SQLTools",
+                "useUTC": true,
+                "encrypt": true
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "driver": "MSSQL",
+            "name": "mssqllocaldb",
+            "connectString": "@\"Server=(localdb)\\mssqllocaldb;Database=helloappdb;Trusted_Connection=True;\""
+        },
+        {
+            "mssqlOptions": {
+                "appName": "SQLTools",
+                "useUTC": true,
+                "encrypt": true
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "driver": "MSSQL",
+            "connectString": "Server=(localdb)\\mssqllocaldb;Database=helloappdb;Trusted_Connection=True",
+            "name": "123"
+        },
+        {
+            "mssqlOptions": {
+                "appName": "SQLTools",
+                "useUTC": true,
+                "encrypt": true
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 1433,
+            "driver": "MSSQL",
+            "name": "SQL Server Local",
+            "database": "helloappdb",
+            "username": "sa"
+        }
+    ]
+}
