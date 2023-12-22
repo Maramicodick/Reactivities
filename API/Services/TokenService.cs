@@ -17,7 +17,7 @@ namespace API.Services
                 new Claim(ClaimTypes.Email, user.Email),
             };
 
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("suoer secret key"));
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("+=vinU<#*lx'9iW!./!=3*,&#Hjpq?Kd#/MU$E0Y0OxjQX3[{ddO2UoII8NWFpY&"));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256Signature);
 
             var tokenDescriptor = new SecurityTokenDescriptor
