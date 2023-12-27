@@ -14,10 +14,11 @@ namespace API.Extensions
             services.AddIdentityCore<AppUser>(opt =>
             {
                 opt.Password.RequireNonAlphanumeric = false;
+                opt.User.RequireUniqueEmail = true;
             })
             .AddEntityFrameworkStores<DataContext>();
 
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("+=vinU<#*lx'9iW!./!=3*,&#Hjpq?Kd#/MU$E0Y0OxjQX3[{ddO2UoII8NWFpY&"));
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["TokenKey"]));
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
