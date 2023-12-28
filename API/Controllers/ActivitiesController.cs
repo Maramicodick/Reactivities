@@ -1,11 +1,12 @@
+using Application.Activities;
 using Domain;
 using MediatR;
-using Microsoft.AspNetCore.Mvc;
-using Application.Activities;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
+    [AllowAnonymous]
     public class ActivitiesController : BaseApiController
     {
         private readonly IMediator _mediator;
